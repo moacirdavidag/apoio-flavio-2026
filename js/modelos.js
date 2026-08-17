@@ -1732,15 +1732,18 @@ function desenharTextoEmArco(ctx, texto, cx, cy, raio, anguloCentro, invertido) 
   const anguloPasso = arcoTotal / totalCaracteres;
   const anguloStart = anguloCentro - (arcoTotal / 2) + (anguloPasso / 2);
 
-  let anguloAtual = anguloStart;
-  for (let i = 0; i < totalCaracteres; i++) {
+  const ordemIndices = invertido
+    ? Array.from({ length: totalCaracteres }, (_, i) => totalCaracteres - 1 - i)
+    : Array.from({ length: totalCaracteres }, (_, i) => i);
+
+  for (let pos = 0; pos < totalCaracteres; pos++) {
+    const i = ordemIndices[pos];
+    const anguloAtual = anguloStart + pos * anguloPasso;
     ctx.save();
     ctx.rotate(anguloAtual + (invertido ? Math.PI : 0));
     ctx.translate(0, invertido ? raio : -raio);
     ctx.fillText(caracteres[i], 0, 0);
     ctx.restore();
-
-    anguloAtual += anguloPasso;
   }
   ctx.restore();
 }
