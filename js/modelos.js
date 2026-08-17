@@ -90,7 +90,21 @@ const LISTA_MODELOS = [
       ctx.fillRect(0, 0, largura, altura);
 
       desenharTexturaLinhas(ctx, largura, altura);
-      desenharCirculosBackground(ctx, largura, altura);
+
+      ctx.save();
+      ctx.globalAlpha = 0.06;
+      ctx.fillStyle = '#ffcc00';
+      ctx.beginPath();
+      ctx.arc(largura * 0.12, altura * 0.18, 120, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(largura * 0.88, altura * 0.82, 180, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(largura * 0.85, altura * 0.25, 80, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.restore();
 
       if (imagemUsuario) {
         ctx.save();
