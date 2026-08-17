@@ -20,7 +20,7 @@ const CONFIGURACOES = {
     }
   },
   numeroCampanha: '22',
-  ID_GA4: 'G-XXXXXXXXXX',
+  ID_GA4: 'G-P5D4XRR9P8',
   marcaAgua: {
     autor: '@moacirdavidag',
     site: 'moacirdavidag.github.io/apoio-flavio-2026',
