@@ -1,0 +1,24 @@
+:root {
+  --corFundoGradiente: linear-gradient(135deg, #072610 0%, #0d421d 40%, #062b3a 100%);
+  --corVerdePrincipal: #10b981;
+  --corVerdeBandeira: #16a34a;
+  --corVerdeNeon: #22c55e;
+  --corVerdeEscuro: #06290e;
+  --corAmareloBandeira: #eab308;
+  --corAmareloNeon: #facc15;
+  --corAzulBandeira: #1d4ed8;
+  --corBranco: #ffffff;
+  --corTextoClaro: #f8fafc;
+  --corTextoSuave: #94a3b8;
+  --corBordaVidro: rgba(255, 255, 255, 0.12);
+  --corFundoVidro: rgba(15, 23, 42, 0.65);
+  --corFundoCardVidro: rgba(255, 255, 255, 0.05);
+  --corSombraGlow: rgba(34, 197, 94, 0.25);
+  --corSombraGlowAmarelo: rgba(250, 204, 21, 0.2);
+  --fontePrincipal: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --fonteManuscrita: 'Caveat', cursive, sans-serif;
+  --raioBordaMedio: 20px;
+  --raioBordaPequeno: 14px;
+  --raioBordaGrande: 30px;
+  --transicaoSuave: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}

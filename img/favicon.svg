@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradVerde" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="gradAmarelo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <linearGradient id="gradAzul" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <path d="M100 12 L170 42 C170 120 100 182 100 188 C100 182 30 120 30 42 Z" fill="url(#gradVerde)" />
+  <polygon points="100,35 152,95 100,155 48,95" fill="url(#gradAmarelo)" />
+  <circle cx="100" cy="95" r="36" fill="url(#gradAzul)" />
+  <path d="M 68,104 A 32,32 0 0 1 132,86 A 35,35 0 0 0 68,104 Z" fill="#ffffff" />
+  <text x="100" y="106" font-family="'Outfit', sans-serif" font-weight="900" font-size="32" fill="#ffffff" text-anchor="middle">22</text>
+</svg>
